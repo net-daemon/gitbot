@@ -1,0 +1,17 @@
+version: "3"
+services:
+  gitbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - gitbot-code:/root/src/
+      - gitbot-bashhistory:/commandhistory
+      # - ..:/workspace:cached
+
+    # Overrides default command so things don't shut down after the process ends.
+    command: /bin/sh -c "while sleep 1000; do :; done"
+
+volumes:
+  gitbot-code:
+  gitbot-bashhistory:
