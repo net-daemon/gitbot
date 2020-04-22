@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/root/src/src/gitbot/gitbot.csproj": {}
+    "/root/src/src/bot/bot.csproj": {}
   },
   "projects": {
-    "/root/src/src/gitbot/gitbot.csproj": {
+    "/root/src/src/bot/bot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/root/src/src/gitbot/gitbot.csproj",
-        "projectName": "gitbot",
-        "projectPath": "/root/src/src/gitbot/gitbot.csproj",
+        "projectUniqueName": "/root/src/src/bot/bot.csproj",
+        "projectName": "bot",
+        "projectPath": "/root/src/src/bot/bot.csproj",
         "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/root/src/src/gitbot/obj/",
+        "outputPath": "/root/src/src/bot/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/root/.nuget/NuGet/NuGet.Config"
@@ -35,12 +35,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.Extensions.Hosting": {
-              "target": "Package",
-              "version": "[3.1.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -52,6 +46,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
